@@ -9,6 +9,7 @@ function App() {
 
   <h1>Trampando com React</h1>
    <h2>Onde posso trampar como Dev?</h2>
+   
     <p>Empresas e Software Houses: Consultorias e fábricas de software que desenvolvem aplicações sob demanda para terceiros.</p>
      <p>Startups de Tecnologia: Ambientes dinâmicos que valorizam a agilidade do perfil técnico para construir MVPs (produtos mínimos viáveis) e novas funcionalidades.</p>
 
@@ -51,7 +52,40 @@ function App() {
   </ul>
 
       </p>
+
+     <h4>Vou fazer faculdade de outra coisa, ser dev vai me ajudar?</h4>
+
+     <p>Se eu fizer faculdade de qualquer outra área que não seja TI/dev, como posso aproveitar minhas capacidades de dev nesse novo mundo?</p>
+
+     <p>Fazer outra faculdade tendo bagagem de dev não é "jogar conhecimento fora" — é ganhar um superpoder estratégico. No mercado moderno, o profissional mais valioso raramente é o especialista puro de uma única área, mas sim o profissional em "T": alguém com conhecimento profundo em um domínio específico (Sua Nova Faculdade) e alta capacidade técnica transversal (Sua Bagagem de Dev).</p>
+
+     <p>
+
+<ul>
+
+<li>Automação e Produtividade Pessoal</li>
+
+<li>Eliminação de Trabalho Braçal: Em áreas como Direito, Administração, Contabilidade ou Saúde, rotinas envolvem ler dezenas de PDFs, preencher planilhas e enviar e-mails padronizados. Com scripts simples em Python ou automações, você faz em minutos o que seus colegas levam dias para realizar.</li>
+
+<li>Análise de Dados Avançada e Pesquisa Científica</li>
+
+<li>Processamento de Dados Sem Limites: Enquanto a maioria dos profissionais se limita ao Excel, você pode usar SQL, Python (Pandas) ou R para analisar volumes gigantescos de dados em áreas como Biologia, Economia, Psicologia ou Medicina.</li>
+
+<li>Simulações e Modelagem: Em engenharias tradicionais, Física ou Finanças, sua lógica de programação permite criar simulações computacionais avançadas para validar hipóteses de pesquisa.</li>
+
+
+
+
+</ul>
+
+
+
+
+     </p>
+
+     
   </div>
+
   
   
    
