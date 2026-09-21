@@ -17,6 +17,9 @@ let internet = Number(prompt("qual valor da internet?"))
 
 
 
+
+
+
 }
 
 
