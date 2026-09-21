@@ -3,6 +3,40 @@ import './App.css'
 
 function App() {
 
+function calcularChurrasco() {
+  let pessoas = Number(prompt("qual a quantidade de pessoas?"))
+
+  let carne = (pessoas * 0.5).toFixed(1)
+  let cerveja = (pessoas * 1).toFixed(1)
+  let agua = (pessoas * 0.5).toFixed(1)
+  let refri = (pessoas * 0.2).toFixed(1)
+
+  alert("Carne: " + carne + "kg\nCerveja: " + cerveja + "l\nÁgua: " + agua + "l\nRefri: " + refri + "l")
+}
+
+  function calcularPrecoRacao() {
+
+  let pesoGramas = Number(prompt("Qual o peso da ração em gramas?"))
+
+  let precoTotal = (pesoGramas / 1000) * 10
+
+  alert("o preço da ração é " + precoTotal)
+
+}
+
+  function calcularprecos () {
+
+let arteusada = Number(prompt("qual o preco da arte usada?"))
+
+let precovenda = arteusada * 3
+
+alert("o preço da arte é "  + precovenda)
+
+
+
+
+  }
+
 function jucaGastar() {
 
 let  salario = Number(prompt("qual valor do salario?"))
@@ -11,8 +45,14 @@ let moradia = Number(prompt("qual valor da moradia?"))
 let agua = Number(prompt("qual valor da agua?"))
 let luz = Number(prompt("qual valor da luz?"))
 let internet = Number(prompt("qual valor da internet?"))
+let gasolina = Number(prompt("qual valor da gasolina?"))
+let Streaming = Number(prompt("qual valor do Streaming?"))
+let telefone = Number(prompt("qual valor do telefone?"))
+let outro = Number(prompt("qual valor das outras despesas?"))
 
+let sobra = salario - moradia - agua - luz - internet - gasolina - Streaming - telefone - outro
 
+alert("sobrou" + sobra + "reais do seu salario")
 
 
 
@@ -233,8 +273,15 @@ alert("A chance de uso de celular é: " + porc.toFixed(2) + "%");
 
     <button onClick={lucrarGanso}>lucrarGanso</button>
     <button onClick={SararMano}>Sarar Mano</button>
+    <button onClick={ jucaGastar}> gasto do juca</button>
+    <hr />
+  
+    <button onClick={calcularprecos}>calcular preco</button>
+    <button onClick={calcularPrecoRacao}>calcular ração</button>
+    <button onClick={calcularChurrasco}>churrascogildao</button>
     </div>
   )
 }
 
 export default App
+
