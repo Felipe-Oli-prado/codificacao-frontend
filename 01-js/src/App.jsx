@@ -279,7 +279,12 @@ alert("A chance de uso de celular é: " + porc.toFixed(2) + "%");
     <button onClick={calcularprecos}>calcular preco</button>
     <button onClick={calcularPrecoRacao}>calcular ração</button>
     <button onClick={calcularChurrasco}>churrascogildao</button>
+
+     <h4>Lado C </h4>
+
     </div>
+
+ 
   )
 }
 
