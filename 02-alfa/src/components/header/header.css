@@ -1,38 +1,39 @@
+
+
 .header {
-  
-  border-bottom: 1px solid var(--cor-borda);
+  width: 100%;
+  border-bottom: 1px solid #ccc; /* Define uma linha cinzenta visível */
   padding: 16px 0;
 }
+
 .header-container {
-  max-width: var(--largura-maxima);
-  margin: 0 auto;
-  padding: 0 var(--largura-lateral);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  padding: 0 2rem; /* Mantém os elementos afastados das bordas laterais */
+  box-sizing: border-box;
 }
-
+/* 2. Container da Logo (Imagem + Texto) */
 .logo {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;                      /* Espaço entre a imagem e o texto Studio Alfa */
 }
 
+/* 3. Tamanho da imagem da Logo */
 .logo-icon {
-  width: 130px;
-  font-size: 18px;
+ 
+  width: 100px; /* Aumente este valor conforme preferir (ex: 180px, 200px, 220px) */
+  height: auto;  /* Mantém a proporção da imagem sem distorcer */
+
 }
 
-.logo-text {
-  font-weight: 600;
-  font-size: 18px;
-  color: var(--cor-titulo);
-}
-
+/* 4. Menu de navegação */
 .nav {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 20px;                      /* Espaçamento entre os links */
 }
 
 .nav a {
@@ -42,7 +43,7 @@
 }
 
 .nav a:hover {
-  color: #1100ff;
+  color: #ff00aa;
   transition: ease 0.5s;
 }
 

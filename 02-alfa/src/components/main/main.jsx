@@ -14,7 +14,7 @@ function Main() {
           <a href="#orcamento" className="btn-primary">
             peça um orçamento
           </a>
-          <a href="#orcamento" className="btn-secundary">
+          <a href="#orcamento" className="btn-secondary">
             ver portfolio
           </a>
         </div>
