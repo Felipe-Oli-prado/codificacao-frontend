@@ -3,6 +3,84 @@ import './App.css'
 
 function App() {
 
+function gerarRelatorioKowalski() {
+  let relatoriosPF = 40
+  let relatoriosPJ = 33
+  let tempoPF = 12
+  let tempoPJ = 42
+  let valorPF = 2350
+  let valorPJ = 8900
+
+  let relatoriosTotais = relatoriosPF + relatoriosPJ
+  let tempoTotal = tempoPF + tempoPJ
+  let valorTotal = valorPF + valorPJ
+
+  let mediaValorPF = valorPF / relatoriosPF
+  let mediaValorPJ = valorPJ / relatoriosPJ
+
+  let mediaTempoPF = tempoPF / relatoriosPF
+  let mediaTempoPJ = tempoPJ / relatoriosPJ
+
+  alert(
+    "--- DADOS CRUS ---\n" +
+    "Relatórios PF: " + relatoriosPF + "\n" +
+    "Relatórios PJ: " + relatoriosPJ + "\n" +
+    "Tempo PF: " + tempoPF + "h\n" +
+    "Tempo PJ: " + tempoPJ + "h\n" +
+    "Valor PF: R$ " + valorPF.toFixed(2) + "\n" +
+    "Valor PJ: R$ " + valorPJ.toFixed(2) + "\n\n" +
+    "--- TOTAIS ---\n" +
+    "Total de relatórios: " + relatoriosTotais + "\n" +
+    "Tempo total trabalhado: " + tempoTotal + "h\n" +
+    "Valor total recebido: R$ " + valorTotal.toFixed(2) + "\n\n" +
+    "--- MÉDIAS ---\n" +
+    "Média valor por relatório PF: R$ " + mediaValorPF.toFixed(2) + "\n" +
+    "Média valor por relatório PJ: R$ " + mediaValorPJ.toFixed(2) + "\n" +
+    "Média tempo por relatório PF: " + mediaTempoPF.toFixed(2) + "h\n" +
+    "Média tempo por relatório PJ: " + mediaTempoPJ.toFixed(2) + "h"
+  )
+}
+
+  function calcularOrcamentoFreela() {
+  let horas = Number(prompt("Digite a quantidade de horas estimadas:"))
+
+  let custoConsultor = 500
+  let valorHora = 350
+
+  let precoCobrado = custoConsultor + (horas * valorHora)
+  let lucro = horas * valorHora
+
+  alert("Preço cobrado do cliente: R$ " + precoCobrado)
+  alert("Lucro do freela: R$ " + lucro)
+}
+
+  function calcularCustoPrompt() {
+  let numCaracteres = Number(prompt("Qual o número de caracteres do prompt?"))
+  let precoPorToken = Number(prompt("Qual o custo de cada token em reais?"))
+
+  let taxaFixaTokens = 5
+  let tokensTotais = taxaFixaTokens + numCaracteres
+
+  let custoEmReais = tokensTotais * precoPorToken
+
+  alert("O prompt vai gastar " + tokensTotais + " tokens.")
+  alert("O custo total do prompt é: R$ " + custoEmReais.toFixed(2))
+}
+
+  function calcularLucroJares() {
+  let caminhoes = Number(prompt("Qual a quantidade de caminhões?"))
+
+  let jaresPorCaminhao = 50
+  let precoPorJare = 90
+  let custoPorCaminhao = 450
+
+  let receitaTotal = caminhoes * jaresPorCaminhao * precoPorJare
+  let custoTotal = caminhoes * custoPorCaminhao
+  let lucro = receitaTotal - custoTotal
+
+  alert("O lucro total da temporada é: R$ " + lucro.toFixed(2))
+}
+
 function calcularChurrasco() {
   let pessoas = Number(prompt("qual a quantidade de pessoas?"))
 
@@ -281,6 +359,11 @@ alert("A chance de uso de celular é: " + porc.toFixed(2) + "%");
     <button onClick={calcularChurrasco}>churrascogildao</button>
 
      <h4>Lado C </h4>
+
+    <button onClick={calcularLucroJares}>jares</button>
+    <button onClick={calcularCustoPrompt}> calcularCustoPrompt</button>
+    <button onClick={calcularOrcamentoFreela}>orçamento freela</button>
+    <button onClick={gerarRelatorioKowalski}>relatório</button>
 
     </div>
 
