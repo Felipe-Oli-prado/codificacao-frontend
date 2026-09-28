@@ -19,7 +19,29 @@ function Main() {
           </a>
         </div>
       </section>
-      <section className="servicos"></section>
+      <section className="servicos">
+        <h2>nossos serviços</h2>
+        <div className="servicos-grid">
+          <div className=" servicos-card1">
+            <span>🐸🐸</span>
+
+            <h3>Designs e interfaces</h3>
+            <p>telas claras, pensadas para o usuario</p>
+          </div>
+
+          <div className="servicos-card2">
+            <span>❤️</span>
+            <h4>responsividade</h4>
+            <p> o mesmo site em qualquer tela</p>
+          </div>
+
+          <div className="servicos-card3">
+            <span>😒</span>
+            <h5>performance</h5>
+            <p>paginas leves que carregam rapido</p>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

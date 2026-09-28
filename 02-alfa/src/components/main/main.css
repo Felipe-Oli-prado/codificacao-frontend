@@ -59,3 +59,9 @@
 .btn-secondary:hover {
   border-color: var(--cor-texto);
 }
+
+.servicos-grid {
+
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+}
