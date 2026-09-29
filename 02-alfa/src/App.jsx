@@ -1,6 +1,6 @@
 import Header from "./components/header/header";
 import Main from "./components/main/main";
-import Footer from "/.scr/components/footer/footer"
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
