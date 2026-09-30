@@ -1,7 +1,10 @@
 
+import { useState } from 'react'
 import './App.css'
 
 function App() {
+  const[resultado, setResultado] = useState (0)
+  
 
 function gerarRelatorioKowalski() {
   let relatoriosPF = 40
@@ -312,33 +315,39 @@ alert("A chance de uso de celular é: " + porc.toFixed(2) + "%");
    alert("sua media é: "+ media)
   }
 
+function CalcularDobro(){
+
+let numero = Number(prompt("digite seu numero AA-GO-RA:"))
+let dobro = numero * 2
+setResultado(dobro)
+}
   return (
     <div className="cont-app">
       <h1>Javascript no React</h1>
+
+      <hr />
+      <h2>usando estados</h2>
+      <button onClick={CalcularDobro}> Estados - dobro</button>
+<p>
+  Resultado da operação: {resultado}
+</p>
+      <hr />
+
 
       <h2>exercicios supimpas</h2>
 
       <button onClick={calcularPontos}>campeonato </button>
        <button onClick={trocarSapatos}> Trocar Pé Pequenos</button>
 
-      <hr />
+      
 
 
       <button onClick={testar}>Testar</button>
       <button onClick={calcularMedia}>Média</button>
-      
-      <hr />
-
       <button onClick={calcularDevs}>Calcular Devs</button>
-
       <button onClick={venderLaranjas}>Vender Laranjas</button>
-
-      <hr />
-
       <button onClick={pagarCustos}>Pagar Custos</button>
       <button onClick={calcularSalarios}>Calcular Salários</button>
-
-      <hr />
       <button onClick={Telles}>Calcular Peso da Carga</button>
       <button onClick={recrutarDevs}>Recrutar Devs</button>
 
@@ -352,7 +361,7 @@ alert("A chance de uso de celular é: " + porc.toFixed(2) + "%");
     <button onClick={lucrarGanso}>lucrarGanso</button>
     <button onClick={SararMano}>Sarar Mano</button>
     <button onClick={ jucaGastar}> gasto do juca</button>
-    <hr />
+ 
   
     <button onClick={calcularprecos}>calcular preco</button>
     <button onClick={calcularPrecoRacao}>calcular ração</button>
