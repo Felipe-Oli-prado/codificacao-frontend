@@ -1,0 +1,60 @@
+/* --- ESTILOS GLOBAIS DE BOTÕES (Aplica em todo o app) --- */
+
+/* Se colocar vários botões dentro de uma div ou container com essa classe, eles já ganham espaçamento */
+botoes-container {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap; /* Para funcionar bem no celular */
+}
+
+/* Espaçamento automático caso você NÃO use div (afasta botões lado a lado) */
+button + button {
+  margin-left: 12px;
+}
+
+/* Estilo visual bonito para TODOS os botões da aplicação */
+button {
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.35);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Efeito ao passar o mouse */
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.45);
+}
+
+/* Efeito ao clicar */
+button:active {
+  transform: scale(0.97);
+}
+
+/* Variante para o botão Secundário (opcional) */
+button.secondary {
+  background: #f3f4f6;
+  color: #374151;
+  border: 1px solid #e5e7eb;
+  box-shadow: none;
+}
+
+button.secondary:hover {
+  background: #e5e7eb;
+  color: #111827;
+  box-shadow: none;
+}
+
+hr{
+
+
+  color: #6f00ff;
+}
