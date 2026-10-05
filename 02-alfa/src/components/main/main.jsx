@@ -1,5 +1,6 @@
-import "./main.css";
 
+import "./main.css";
+import ServicoCard from "../servicoCard/servicoCard";
 function Main() {
   return (
     <main className="main">
@@ -23,6 +24,26 @@ function Main() {
         <h2>nossos serviços</h2>
 
          <div className="servicos-grid">
+          
+<ServicoCard 
+titulo= "Design de Interface"
+ icone="😉"
+  descricao="Telas claras, pensadas para o usuario"/>
+
+<ServicoCard2 
+titulo=""
+icone=""
+descricao=""
+
+/> 
+
+
+<ServicoCard3
+titulo=""
+icone=""
+descricao=""
+ />
+
           <div className="servico-card">
             <span>😁</span>
             <h3>design de interface</h3>
