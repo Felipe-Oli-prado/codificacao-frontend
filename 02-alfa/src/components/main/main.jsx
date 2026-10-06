@@ -1,6 +1,29 @@
 import "./main.css";
 import ServicoCard from "../servicoCard/servicoCard";
 
+
+const servicos = [
+  {
+    id: 1,
+    titulo: "Design de Interface",
+    icone: "🪟",
+    descricao: "Telas claras, pensadas para o usuario",
+  },
+  {
+    id: 2,
+    titulo: "Responsividade",
+    icone: "📱",
+    descricao: "O mesmo site em qualquer tela.",
+  },
+  {
+    id: 3,
+    titulo: "Performance",
+    icone: "🚀",
+    descricao: "Paginas leves que carregam rápido",
+  },
+];
+
+
 function Main() {
   return (
     <main className="main">
@@ -24,23 +47,15 @@ function Main() {
         <h2>nossos serviços</h2>
 
         <div className="servicos-grid">
-          <ServicoCard
-            titulo="Design de Interface"
-            icone="🪟"
-            descricao="Telas claras, pensadas para o usuario"
-          />
-
-          <ServicoCard
-            titulo="Responsividade"
-            icone="📱"
-            descricao="O mesmo site em qualquer tela"
-          />
-
-          <ServicoCard
-            titulo="Performance"
-            icone="🚀"
-            descricao="Paginas leves que caarregam rápido"
-          />
+         {servicos.map((servico) => (
+            <ServicoCard
+              key={servico.id}
+              titulo={servico.titulo}
+              icone={servico.icone}
+              descricao={servico.descricao}
+            />
+          ))}
+          
         </div>
       </section>
     </main>

@@ -11,23 +11,4 @@ function ServicoCard({ icone, titulo, descricao }) {
 }
 
 export default ServicoCard;
-const servicos = [
-  {
-    id: 1,
-    titulo: "Design de Interface",
-    icone: "🪟",
-    descricao: "Telas claras, pensadas para o usuario",
-  },
-  {
-    id: 2,
-    titulo: "Responsividade",
-    icone: "📱",
-    descricao: "O mesmo site em qualquer tela.",
-  },
-  {
-    id: 3,
-    titulo: "Performance",
-    icone: "🚀",
-    descricao: "Paginas leves que carregam rápido",
-  },
-];
+
